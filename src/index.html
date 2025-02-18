@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gajléH crochet</title>
+
+    <!-- Collegamento al foglio di stile (path aggiornato) -->
+    <link rel="stylesheet" href="/test/css/styles.css">
+
+    <!-- Favicon con percorso relativo alla repo -->
+    <link rel="icon" type="image/png" sizes="32x32" href="/test/assets/favicon-dark.png" media="(prefers-color-scheme: dark)">
+    <link rel="icon" type="image/png" sizes="32x32" href="/test/assets/favicon-light.png" media="(prefers-color-scheme: light)">
+
+    <style>
+        /* Stili di base per il corpo */
+        body {
+            background-color: #f5f5f5;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Sezione Hero con immagine di sfondo (path aggiornato) */
+        .hero {
+            background: url('/test/assets/hero-image.jpg') center/cover no-repeat;
+            height: 90vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            position: relative;
+        }
+
+        /* Ombra scura per l'hero */
+        .hero::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            box-shadow: inset 0px 0px 50px rgba(0, 0, 0, 0.8);
+        }
+
+        /* Testo all'interno dell'hero */
+        .hero-text {
+            position: relative;
+            z-index: 2;
+        }
+
+        /* Stili per la barra di navigazione */
+        header {
+            background: white;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        nav ul {
+            display: flex;
+            align-items: center;
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+        }
+
+        /* Stile per il logo */
+        .logo {
+            height: 50px;
+        }
+
+        /* Stile per il pulsante con immagine centrale */
+        .cta-button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #000;
+            color: white;
+            padding: 15px 25px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+
+        .cta-button img {
+            height: 20px;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Barra di navigazione -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#collection">Collezione</a></li>
+                <li><img src="/test/assets/logo.png" alt="Logo" class="logo"></li>
+                <li><a href="#about">Chi siamo</a></li>
+                <li><a href="#contact">Contatti</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Sezione Hero -->
+    <section class="hero">
+        <div class="hero-text">
+            <h1>Esclusività e Artigianalità</h1>
+            <p>Scopri le nostre borse fatte a mano, uniche come te.</p>
+            <a href="#collection" class="cta-button">
+                <img src="/test/assets/logo.png" alt="Logo"> Scopri la Collezione
+            </a>
+        </div>
+    </section>
+
+    <!-- Sezione Collezione -->
+    <section id="collection" class="content-section">
+        <h2>La Nostra Collezione</h2>
+        <div class="products">
+            <div class="product">
+                <img src="/test/assets/bag1.jpg" alt="Borsa Sburacchio">
+                <h3>Borsa Sburacchio</h3>
+                <p>Raffinata e senza tempo.</p>
+            </div>
+            <div class="product">
+                <img src="/test/assets/bag2.jpg" alt="Borsa Bukkyny">
+                <h3>Borsa Bukkyny</h3>
+                <p>Perfetta per ogni occasione.</p>
+            </div>
+            <div class="product">
+                <img src="/test/assets/bag3.jpg" alt="Borsa Anal">
+                <h3>Borsa Anal</h3>
+                <p>Un classico che non passa mai di moda.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sezione Chi siamo -->
+    <section id="about" class="content-section">
+        <h2>Chi Siamo</h2>
+        <p>Ogni borsa nasce da un'idea, dalla passione per il design e dall'amore per i materiali pregiati. Il nostro obiettivo è offrire un accessorio unico, fatto a mano con cura e attenzione ai dettagli.</p>
+    </section>
+
+    <!-- Sezione Contatti -->
+    <section id="contact" class="content-section">
+        <h2>Contattaci</h2>
+        <p>Hai domande? Vuoi un modello personalizzato? Scrivici!</p>
+        <form>
+            <input type="text" placeholder="Il tuo nome" required>
+            <input type="email" placeholder="La tua email" required>
+            <textarea placeholder="Il tuo messaggio" required></textarea>
+            <button type="submit">Invia</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 gajléH crochet. Tutti i diritti riservati.</p>
+    </footer>
+
+</body>
+</html>
